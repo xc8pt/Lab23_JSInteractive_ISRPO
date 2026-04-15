@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ-23</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="main.js" defer></script>
+    //
+    <div class="container">
+        <h1>Профиль пользователя</h1>
+
+        <div class="form-container">
+            <h2>Редактировать профиль</h2>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                    <small class="error-message" id="nameError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="age">Возраст:</label>
+                    <input type="number" id="age" placeholder="Введите возраст">
+                    <small class="error-message" id="ageError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="city">Город:</label>
+                    <input type="text" id="city" placeholder="Введите город">
+                    <small class="error-message" id="cityError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="hobby">Хобби:</label>
+                    <input type="text" id="hobby" placeholder="Введите хобби">
+                    <small class="error-message" id="hobbyError"></small>
+                </div>
+                <div class="button-group">
+                    <button type="submit" id="submitBtn">Сохранить</button>
+                    <button type="button" id="clearBtn">Очистить данные</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="profile-display">
+            <h2>Информация профиля</h2>
+            <div id="profileInfo" class="profile-card">
+                <p><strong>Имя:</strong> <span id="displayName">-</span></p>
+                <p><strong>Возраст:</strong> <span id="displayAge">-</span></p>
+                <p><strong>Город:</strong> <span id="displayCity">-</span></p>
+                <p><strong>Хобби:</strong> <span id="displayHobby">-</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
